@@ -1,0 +1,16 @@
+.form {
+    width: 500px;
+    height: 70%;
+    background-color: rgba(0,0,0,.75);
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.container_main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/5dd45df7-33f1-4274-97ea-e9c6aca69dad/7b36e997-239e-4711-8030-49c1fd3e77e5/VN-en-20211108-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-size: cover;
+}

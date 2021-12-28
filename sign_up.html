@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign_up.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="sign_in.html">
+</head>
+
+<body>
+    <div class="container_main">
+        <div class="logo"></div>
+        <br><br><br><br>
+        <div class="form">
+            <h2 style="color: white;">Sign Up</h2>
+            <form id="mySignUpForm" style="color: #b3b3b3;">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div>
+                    <label for="inputUsername" class="form-label">Username</label>
+                    <input type="username" class="form-control" id="inputUsername">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="confirmInputPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmInputPassword">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                </div>
+                <button style="background-color: #e50914; width: 100%; padding: 10px 0 10px 0; color: white;"
+                    type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        let mySignUpForm = document.getElementById("mySignUpForm");
+        mySignUpForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            console.log(mySignUpForm.exampleInputEmail1.value)
+            if (mySignUpForm.exampleInputPassword1.value == mySignUpForm.confirmInputPassword.value) {
+                localStorage.setItem("userEmail", mySignUpForm.exampleInputEmail1.value);
+                localStorage.setItem("userPassword", mySignUpForm.exampleInputPassword1.value);
+                localStorage.setItem("userName", mySignUpForm.inputUsername.value);
+                alert("You have sucessfully signed up.");
+                window.location.href = "./sign_in.html"
+            } else {
+                alert("Please enter the matching password.")
+            }
+        })
+    </script>
+    </div>
+</body>
+
+</html>

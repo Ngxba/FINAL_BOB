@@ -1,0 +1,59 @@
+.editProfileDiv {
+    height: 85vh;
+    width: 550px;
+    border: 7px solid white;
+    margin: 0 auto;
+}
+#editProfile {
+    color: white;
+}
+#cancelBtn {
+    height: 50 px;
+    width: 175px;
+    background-color: lightgrey;
+    border: 3px solid white;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+#confirmBtn {
+    height: 50px;
+    width: 175px;
+    background-color: red;
+    border: 3px solid white;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+#userNameBtn {
+    width: 175px;
+    height: 50px;
+    background-color: red;
+    border: 3px solid white;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+#passwordBtn {
+    width: 175px;
+    height: 50px;
+    background-color: red;
+    border: 3px solid white;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+#languageBtn {
+    width: 175px;
+    height: 50px;
+    background-color:#434343;
+    border: 3px solid white;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}

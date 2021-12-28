@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+      }
+      .container {
+        width: 70%;
+        margin: auto;
+        background-color: gray;
+        padding: 30px;
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0px;
+      }
+      .like {
+        display: flex;
+        align-items: center;
+      }
+      .like img {
+        width: 30px;
+        margin-right: 10px;
+      }
+      .wrapper{
+        color: #fff;
+        font-size: 92px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: "Josefin Sans", sans-serif;
+        background: linear-gradient(
+          to right,
+          #095fab 10%,
+          #25abe8 50%,
+          #57d75b 60%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 1.5s linear infinite;
+        display: inline-block;
+      }
+
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="border-radius: 5px; background-color: #141414;" class="container">
+      <iframe
+        width="100%"
+        height="550px"
+        src="https://www.youtube.com/embed/obInWrJzKWY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <div class="info">
+        <p class="wrapper" style="font-size: 30px">Home Alone 2 : Lost in New York</p>
+      </div>
+
+      <p>
+        After snarky youth Kevin McCallister (Macaulay Culkin) loses track of his father at the airport, he mistakenly gets on a plane headed for New York City -- while the rest of the McCallisters fly to Florida. Now alone in the Big Apple, Kevin cons his way into a room at the Plaza Hotel and begins his usual antics. But when Kevin discovers that the Sticky Bandits (Joe Pesci, Daniel Stern) are on the loose, he struggles to stop them from robbing an elderly man's toy store just before Christmas.
+      </p>
+    </div>
+  </body>
+</html>
